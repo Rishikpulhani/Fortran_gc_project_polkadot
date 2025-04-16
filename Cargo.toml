@@ -1,0 +1,26 @@
+[package]
+name = "gc_project"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Memory allocation and management
+libc = "0.2"
+# Smart pointer and custom allocator support
+typed-arena = "2.0"
+# Logging support
+log = "0.4"
+env_logger = "0.10"
+# Testing utilities
+criterion = { version = "0.5", features = ["html_reports"] }
+# Error handling
+thiserror = "1.0"
+anyhow = "1.0"
+# Bitcoin Development Kit
+bdk = { version = "0.28.0", features = ["all-keys", "electrum"] }
+# Async runtime
+tokio = { version = "1.28", features = ["full"] }
+hex = "0.4.3"
+
+[dev-dependencies]
+pretty_assertions = "1.4"
