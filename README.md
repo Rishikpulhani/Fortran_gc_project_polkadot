@@ -1,4 +1,4 @@
-# Game & Blockchain Integration Project
+# Tech GC Project
 
 This project combines a Python-based game with blockchain transaction capabilities using Rust.
 
