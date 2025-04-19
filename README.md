@@ -1,22 +1,57 @@
+# Game & Blockchain Integration Project
 
-## Requirements
+This project combines a Python-based game with blockchain transaction capabilities using Rust.
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install following packages :-
+## Game Component
+
+### Requirements
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install required packages:
 * Pygame
 
 ```bash
 pip install pygame
 ```
 
+### Game Usage
+
+Run the game with:
 ```bash
 python3 main.py
 ```
 
-## Usage
+#### Game Controls
+* Use Space or Up arrow key to jump
+* Use Left & Right arrow keys to move
+* Collect diamonds while avoiding bees, slimes, water & lava
+* Clear all levels to win
 
-Double click the game.py to open the game, Click start to start playing the game. The objective of the game is to clear all levels & collecting diamonds without getting hit by bees, slimes or without touching water & lava
+## Blockchain Component
 
-Controls:
-* Use Space or Up arrow key to jump.
-* Use Left & Right arrow key to move in left & right direction respectively
+### Requirements
+
+The blockchain component requires:
+* Rust and Cargo
+* Bitcoin Development Kit (BDK)
+
+### Transaction Features
+
+The Rust component provides:
+* Wallet initialization with testnet support
+* Balance checking
+* OP_RETURN transaction creation with Runes payload
+* Transaction broadcasting
+* Explorer links to track transactions on:
+  - Mempool
+  - Blockstream
+  - BlockCypher
+
+### Building and Running
+
+```bash
+cargo build
+cargo run
+```
+
+
 
